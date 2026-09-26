@@ -1,0 +1,6 @@
+{
+  "name": "AAA&JAY Mobile Detailing Spa | Orlando, FL",
+  "description": "Orlando's Premier 4.9★ Mobile Car Detailing Spa. Hand wash, interior steam cleaning, paint correction, ceramic coating & Showroom Ready detailing brought directly to your location.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
