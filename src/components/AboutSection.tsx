@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, ShieldCheck, HeartHandshake, Sparkles, CheckCircle2, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/detailingData';
+import interiorSpaImg from '../assets/images/interior_spa_detail_1790404770476.jpg';
 
 interface AboutSectionProps {
   onOpenBooking: () => void;
@@ -14,7 +15,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
         <div className="lg:col-span-5 relative">
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <img
-              src="/src/assets/images/interior_spa_detail_1790404770476.jpg"
+              src={interiorSpaImg}
               alt="AAA&JAY Mobile Detailing Spa Interior Craftsmanship"
               className="w-full aspect-[4/3] object-cover"
             />

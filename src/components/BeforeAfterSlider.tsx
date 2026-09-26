@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Sparkles, Sliders, ChevronLeft, ChevronRight } from 'lucide-react';
+import ceramicBeadingImg from '../assets/images/ceramic_beading_1790404786883.jpg';
+import headlightImg from '../assets/images/headlight_restoration_1790404853524.jpg';
+import interiorSpaImg from '../assets/images/interior_spa_detail_1790404770476.jpg';
 
 interface TransformationPreset {
   id: string;
@@ -20,7 +23,7 @@ const PRESETS: TransformationPreset[] = [
     description: 'Eliminates 85%+ of spiderweb swirl marks, buffer trails, and sun haze to restore deep metallic depth and water-sheeting hydrophobic protection.',
     beforeLabel: 'BEFORE: Swirled & Oxidized Clear Coat',
     afterLabel: 'AFTER: AAA&JAY Mirror Ceramic Finish',
-    imageAfter: '/src/assets/images/ceramic_beading_1790404786883.jpg',
+    imageAfter: ceramicBeadingImg,
     beforeFilter: 'grayscale(0.6) contrast(0.85) brightness(0.8) blur(0.5px)'
   },
   {
@@ -30,7 +33,7 @@ const PRESETS: TransformationPreset[] = [
     description: 'Josh Jerry & Giovanni noted this in their reviews! Wet sanding and multi-stage compound clears away foggy UV oxidation for factory optical clarity.',
     beforeLabel: 'BEFORE: Cloudy & Yellowed Foggy Lens',
     afterLabel: 'AFTER: Restored Crystal Optical Finish',
-    imageAfter: '/src/assets/images/headlight_restoration_1790404853524.jpg',
+    imageAfter: headlightImg,
     beforeFilter: 'sepia(0.65) saturate(1.8) brightness(0.8) blur(1.5px)'
   },
   {
@@ -40,7 +43,7 @@ const PRESETS: TransformationPreset[] = [
     description: 'Hot-water enzyme shampooing on carpets, seats taken out for full perimeter extraction, and specialized leather lanolin conditioning.',
     beforeLabel: 'BEFORE: Stained Mats & Grimy Leather',
     afterLabel: 'AFTER: Showroom Spa Sanitized Perfection',
-    imageAfter: '/src/assets/images/interior_spa_detail_1790404770476.jpg',
+    imageAfter: interiorSpaImg,
     beforeFilter: 'sepia(0.4) brightness(0.7) contrast(1.1) grayscale(0.3)'
   }
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, ShieldCheck, ArrowRight, Phone, Sparkles, Droplets, Zap, CheckCircle2 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/detailingData';
+import heroImg from '../assets/images/hero_detailing_spa_1790404750990.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -13,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenGmbModal }) => 
       {/* Background Hero Image with Automotive Tint & Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_detailing_spa_1790404750990.jpg"
+          src={heroImg}
           alt="AAA&JAY Mobile Car Detailing Spa in Orlando Florida"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-subtle-zoom"
         />
